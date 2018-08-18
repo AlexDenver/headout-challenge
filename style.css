@@ -1,0 +1,226 @@
+body{
+    font-family: sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+header{
+    background: #f53662;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+}
+.nav {
+    margin: 0 100px 0 auto;
+}
+header img{
+    height: 60px;
+    padding-left: 25px;
+}
+header .nav ul{
+    list-style: none;
+}
+header .nav ul li{
+    display: inline-block;
+}
+header .nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-bottom: 3px solid transparent;
+    font-weight: 900;
+    transition: border 500ms ease;
+}
+
+.nav li a:hover {
+    border-bottom: 3px solid white;
+}
+
+
+
+
+.body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+aside{
+    background: #ecf0f1;
+}
+aside .box{
+    padding: 10px;
+}
+aside .box img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 400ms ease;
+}
+aside .box img:hover {        
+    filter: grayscale(60%);
+}
+span.title {
+    display: block;
+    color: #191718;
+}
+span.uploader {
+    display: block;
+    color: #777373;
+}
+.media{
+    padding: 10px;
+}
+.media video{
+    width: 100%;
+}
+.media-info {
+    background: #f53661;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+}
+
+
+.badge img {
+    border-radius: 100%;
+    background: #fff;
+    padding: 5px;
+    height: 40px;
+}
+.badge {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+span.usn, .uploaded {
+    margin-left: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.uploaded{
+    font-size: 0.66rem;
+    font-weight: 100;
+    display: block;
+}
+.uploaded span{
+    font-weight: 900;
+}
+.media-info .title {
+    padding: 15px 30px;
+    margin: 0;
+    color: #fff;
+    background: #5d0417;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+}
+.views img {
+    width: 20px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+button {
+    margin-left: 20px;
+    margin-top: 5px;
+    background: #fff;
+    border: 0;
+    padding: 5px 15px;
+    color: #5d0d18;
+    border-bottom: 2px solid transparent;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+button:hover{
+    background: #5d0d18;
+    color: #fff;
+    border: 2px solid;
+}
+.share img {
+    height: 30px;
+}
+.share {
+    text-align: center;
+    position: relative;
+}
+
+.controls div:nth-of-type(2n) {
+    border: 2px dashed #fdfdfd;    
+    border-top: 0;
+    border-bottom: 0;
+}
+.share span {
+    display: block;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bold;
+    
+}
+.share > img{
+    transform: rotate(0deg);
+    transition: transform 800ms ease;
+}
+.social {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+.share.open > img{
+    transform: rotate(405deg);
+}
+.share.open .social {
+    display: inline-block;
+    padding: 0;
+    background: #f53660;
+    padding: 10px;
+    left: 25%;
+    opacity: 1;
+}
+
+.social li{
+    display: inline-block;
+}
+.card {
+    display: flex;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+.card span {
+    color: #000;
+}
+.card .badge {
+    display: block;
+}
+.badge {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.card .badge span{
+    margin: 0; 
+    display: block;
+}
+.card .badge {
+    text-align: center;
+}
+.card span.usn {
+    font-size: 0.7rem;
+}
+.card p {
+    padding-top: 10px;
+    color: #2b2b2b;
+}
+textarea {
+    width: 80%;
+    padding: 0;
+    height: 100px;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
